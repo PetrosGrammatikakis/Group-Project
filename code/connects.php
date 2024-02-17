@@ -1,10 +1,14 @@
-<?php 
+<?php
+$host = "127.0.0.1"; // Host name
+$username = "root"; // MySQL username
+$password = ""; // MySQL password
+$db_name = "ISTORIKH_EGKYKLOPAIDEIA"; // Database name
 
-	$h = 'localhost';
-	$u = 'student_2308';
-	$p = 'pass2308';
-	$n = 'student_2308';
-	
-	$conne = mysqli_connect($h, $u, $p, $n) or die("Connection failed");
+// Create connection
+$conne = mysqli_connect($host, $username, $password, $db_name);
 
-?>?
+// Check connection
+if (!$conne) {
+    die("Connection failed: " . mysqli_connect_error());
+} 
+?>

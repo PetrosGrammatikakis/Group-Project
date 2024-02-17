@@ -1,6 +1,12 @@
 <?php
 include 'connects.php';
 
+
+if (!isset($conne)) {
+    die("Database connection is not established");
+}
+
+
 // Fetch valid BASILIA_ID values from the BASEILIA table
 $query = "SELECT BASILIA_ID FROM BASEILIA";
 $result = mysqli_query($conne, $query);
