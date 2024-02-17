@@ -1,9 +1,9 @@
 <?php 
 
 	$h = 'localhost';
-	$u = 'PetrosGrammatikakis';
-	$p = '18,10,2002p!';
-	$n = 'PetrosGrammatikakis';
+	$u = 'student_2308';
+	$p = 'pass2308';
+	$n = 'student_2308';
 	
 	$conne = mysqli_connect($h, $u, $p, $n) or die("Connection failed");
 
